@@ -1,0 +1,592 @@
+/* --------var css--------------- */
+:root {
+    --fn-mont: 'Montserrat', sans-serif;
+    --fn-thin: 100;
+    --fn-light: 300;
+    --fn-regular: 400;
+    --fn-bold: 700;
+    --fn-black: 900;
+    --green_3b: #68bf3b;
+    /* header button, section h2 footer button*/
+    --green_0b: #50a60b;
+    /* header button2  section buttons*/
+    --green_16: #68cd16;
+    /* section sale belgisi */
+    --white: white;
+    /* header logo h1 parag  */
+    --grey_1: #bdbdbd;
+    /* section par1 */
+    --grey_2: #a6a6a6;
+    /*  section h2 va hamma paragraflar uchun narxlar ham*/
+    --dark: rgb(0, 0, 0, 0.1);
+    /* section button ichki soya va header button  */
+    --black: #060503;
+    /* footer uchun */
+    --green-menu: rgb(104, 205, 22, 0.2);
+    /* section part2 menyu ranggi */
+    --col-1: calc(100% / 12 * 1);
+    --col-2: calc(100%/ 12 * 2);
+    --col-3: calc(100% / 12 * 3);
+    --col-4: calc(100% / 12 * 4);
+    --col-5: calc(100% / 12 * 5);
+    --col-6: calc(100% / 12 * 6);
+    --col-7: calc(100% / 12 * 7);
+    --col-8: calc(100% / 12 * 8);
+    --col-9: calc(100% / 12 * 9);
+    --col-10: calc(100% / 12 * 10);
+    --col-11: calc(100% / 12 * 11);
+    --col-12: calc(100% / 12 * 12);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    --fn-mont: 'Montserrat', sans-serif;
+    min-width: 320px;
+    color: white;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    width: 100%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+}
+
+/* ========justify=============== */
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-start {
+    justify-content: start;
+}
+
+/* ========align===============  */
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-start {
+    align-items: start;
+
+}
+
+/* =======column=========== */
+.flex-direction-column {
+    flex-direction: column;
+}
+
+/* .col-4{
+     width: var(--col-4);
+     padding: 0 15px;
+} */
+.col-12 {
+    width: var(--col-12);
+    padding: 0 15px;
+}
+
+
+/* =============header================ */
+header {
+    width: 100%;
+    min-height: 770px;
+    background: url(./img/header_bg.jpg) no-repeat center center / cover;
+}
+
+.logo {
+    color: var(--white);
+    font-weight: var(--fn-bold);
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+header nav p {
+    font-size: 24px;
+    font-weight: var(-fn-regular);
+    color: var(--white);
+}
+
+header nav button {
+    background: var(--green_3b);
+    padding: 18px 27px;
+    border-radius: 25px;
+    border: none;
+}
+
+header nav button a {
+    font-size: 16px;
+    font-weight: var(-fn-regular);
+    color: var(--white);
+}
+
+header .black {
+    font-size: 18px;
+    font-weight: var(--fn-black);
+    color: var(--white);
+    margin-top: 180px;
+}
+
+header h1 {
+    font-size: 72px;
+    font-weight: var(-fn-regular);
+    color: var(--white);
+    /* margin-bottom: 40px; */
+}
+
+header .price {
+    font-size: 18px;
+    font-weight: var(-fn-regular);
+    color: var(--white);
+}
+
+header button {
+    background: var(--green_0b);
+    padding: 16px 44px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 30px;
+}
+
+header button a {
+    font-size: 16px;
+    font-weight: var(-fn-regular);
+    color: var(--white);
+}
+
+/* =============header is finished  */
+section .col-7 {
+    margin-left: 35px;
+    border: 2px soid red;
+
+}
+
+section .col-7 h2 {
+    font-size: 36px;
+    font-weight: var(-fn-regular);
+    color: var(--green_3b);
+    margin-bottom: 66px;
+}
+
+section .col-7 p {
+    font-size: 18px;
+    font-weight: var(-fn-regular);
+    color: var(--grey_1);
+    line-height: 36px;
+}
+
+section .col-7 .name {
+    font-size: 24px;
+    font-weight: var(-fn-bold);
+    color: var(--grey_1);
+    margin-top: 70px;
+}
+
+section .menu h2 {
+    font-size: 36px;
+    font-weight: var(--fn-bold);
+    color: var(--green-menu);
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+section .col-7 .text-kombo {
+    margin-left: 32px;
+    margin-right: 216px;
+    width: 312px;
+}
+
+section .col-7 .text-kombo h2 {
+    font-size: 30px;
+    font-weight: var(--fn-bold);
+    color: var(--grey_2);
+    margin: 30px 0;
+}
+
+section .col-7 .text-kombo ul li {
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: var(-fn-regular);
+    color: var(--grey_2);
+
+}
+
+section .col-7 .zakaz .price {
+    margin-left: 40px;
+    margin-top: 45px;
+    font-size: 30px;
+    font-weight: var(--fn-bold);
+    color: var(--grey_2);
+}
+
+section .col-7 .zakaz .price span {
+    font-size: 18px;
+    font-weight: var(--fn-light);
+    color: var(--grey_2);
+}
+
+section .col-7 .zakaz button {
+    background: var(--green_0b);
+    padding: 18px 23px 20px 30px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 28px;
+
+}
+
+section .col-7 .zakaz button a {
+    font-size: 16px;
+    font-weight: var(-fn-regular);
+    color: var(--white);
+}
+
+section .col-4 h2 {
+    font-size: 14px;
+    font-weight: var(--fn-bold);
+    color: var(--grey_2);
+    margin-top: 28px;
+    margin-bottom: 22px;
+}
+
+section .col-4 p {
+    font-size: 14px;
+    font-weight: var(-fn-regular);
+    color: var(--grey_2);
+    line-height: 24px;
+}
+
+section .col-4 .right p {
+    text-align: start;
+}
+
+footer {
+    height: 200px;
+    background: var(--black);
+}
+footer .row {
+    margin-top: 30px;
+}
+footer .row p {
+    font-size: 24px;
+    font-weight: var(--fn-regular);
+    color: var(--white);
+}
+footer .row button {
+    background: var(--green_3b);
+    padding: 18px 27px;
+    border-radius: 25px;
+    border: none;
+}
+footer .row button a {
+    font-size: 16px;
+    font-weight: var(-fn-regular);
+    color: var(--white);
+}
+footer p {
+    font-size: 16px;
+    font-weight: var(--fn-thin);
+    color: var(--white);
+    text-align: center;
+}
+
+/* media  */
+@media (max-width: 992px) {
+    /* LG */
+    .col-lg-12 {
+        width: var(--col-12);
+    }
+    .row {
+        margin: 0;
+    }
+    section .menu .zakaz .price {
+        margin-left: 20px;
+        margin-top: 25px;
+        font-size: 20px;
+    }
+    section .menu .zakaz .price span {
+        font-size: 12px;
+    }
+    section .menu .zakaz button {
+        padding: 9px 23px 10px 30px;
+        border-radius: 20px;
+        border: none;
+        margin-top: 14px;
+    }
+    section .menu .zakaz button a {
+        font-size: 10px;
+        font-weight: var(-fn-regular);
+        color: var(--white);
+    }
+    section .menu .text-kombo h2 {
+        font-size: 20px;
+        font-weight: var(--fn-bold);
+        color: var(--grey_2);
+        margin: 20px 0;
+    }
+    section .menu .text-kombo ul li {
+        line-height: 20px;
+        font-size: 14px;
+        font-weight: var(-fn-regular);
+        color: var(--grey_2);
+    }
+
+    section .col-7 .text-kombo {
+        margin-left: 15px;
+        margin-right: 216px;
+        margin-bottom: 15px;
+        max-width: 312px;
+    }
+
+
+}
+
+@media (max-width: 768px)
+
+/* MD */
+    {
+    .col-md-6 {
+        width: var(--col-6);
+    }
+
+    section .col-7 h2 {
+        font-size: 12px;
+        margin-bottom: 36px;
+    }
+
+    section .col-7 p {
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    section .col-7 .name {
+        font-size: 24px;
+        margin-top: 70px;
+    }
+
+    section .menu h2 {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+
+    /* ------------- */
+    section .col-7 .text-kombo {
+        margin-left: 15px;
+        margin-right: 216px;
+        max-width: 312px;
+    }
+
+    section .col-7 .text-kombo h2 {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+
+    section .col-7 .text-kombo ul li {
+        line-height: 24px;
+        font-size: 14px;
+
+
+    }
+
+    section .col-7 .zakaz .price {
+        margin-left: 15px;
+        margin-top: 15px;
+        font-size: 30px;
+
+    }
+
+    section .col-7 .zakaz .price span {
+        font-size: 18px;
+
+    }
+
+    section .col-7 .zakaz button {
+        background: var(--green_0b);
+        padding: 18px 23px 20px 30px;
+        border-radius: 30px;
+        border: none;
+        margin-bottom: 20px;
+
+    }
+
+    section .col-7 .zakaz button a {
+        font-size: 16px;
+
+    }
+
+    footer .PROWEB {
+        margin-top: 30px;
+    }
+
+
+
+
+}
+
+@media (max-width: 567px)
+
+/* SM */
+    {
+    .col-sm-12 {
+        width: var(--col-12);
+    }
+
+    .logo {
+        color: var(--white);
+        font-weight: var(--fn-bold);
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+    header nav p {
+        font-size: 18px;
+
+    }
+
+    header nav button {
+        padding: 9px 13px;
+        border-radius: 25px;
+        border: none;
+    }
+
+    header nav button a {
+        font-size: 10px;
+
+    }
+
+    header .black {
+        font-size: 18px;
+        margin-top: 180px;
+    }
+
+    header h1 {
+        font-size: 62px;
+        /* margin-bottom: 40px; */
+    }
+
+    header .price {
+        font-size: 18px;
+    }
+
+    header button {
+        padding: 10px 34px;
+        border-radius: 30px;
+        border: none;
+        margin-top: 20px;
+    }
+
+    header button a {
+        font-size: 16px;
+    }
+
+
+
+    /* --------------- */
+    section .col-7 h2 {
+        font-size: 36px;
+        margin-bottom: 66px;
+    }
+
+    section .col-7 p {
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    section .col-7 .name {
+        font-size: 24px;
+        margin-top: 70px;
+    }
+
+    section .menu h2 {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+
+    /* ------------- */
+    section .col-7 .text-kombo {
+        margin-left: 15px;
+        margin-right: 216px;
+        max-width: 312px;
+    }
+
+    section .col-7 .text-kombo h2 {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+
+    section .col-7 .text-kombo ul li {
+        line-height: 24px;
+        font-size: 14px;
+
+
+    }
+
+    section .col-7 .zakaz .price {
+        margin-left: 15px;
+        margin-top: 15px;
+        font-size: 30px;
+
+    }
+
+    section .col-7 .zakaz .price span {
+        font-size: 18px;
+
+    }
+
+    section .col-7 .zakaz button {
+        background: var(--green_0b);
+        padding: 18px 23px 20px 30px;
+        border-radius: 30px;
+        border: none;
+        margin-bottom: 20px;
+
+    }
+
+    section .col-7 .zakaz button a {
+        font-size: 16px;
+
+    }
+    /* -===================== */
+    footer .row {
+        margin-top: 30px;
+    }
+    footer .row p{
+        font-size: 20px;
+        
+    }
+    footer .row button {
+        padding: 9px 13px;
+        border-radius: 25px;
+        border: none;
+    }
+    footer .row button a {
+        font-size: 10px;
+    }
+    footer p {
+        font-size: 16px;
+        font-weight: var(--fn-thin);
+        color: var(--white);
+        text-align: center;
+    }
+
+    footer .PROWEB {
+        margin-top: 30px;
+    }
+
+}

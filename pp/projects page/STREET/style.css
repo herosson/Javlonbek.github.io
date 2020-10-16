@@ -1,0 +1,379 @@
+
+:root{
+    --fn-rl: 'Raleway', sans-serif;
+    --fn-ro: 'Roboto', sans-serif;
+    --fn-thin: 100;
+    --fn-light: 300;
+    --fn-regul: 400;
+    --fn-bold: 700;
+    --fn-black: 900;
+    --green_75: rgba(105, 207, 23, 0.75); /* aktiv uchun */
+    --green_90: rgba(105, 207, 23, 0.90); /* gamburger uchun */
+    --green:#96cf17;/* menu uchun */
+    --green_19:#96cf19; /* logo border uchun */
+    --green_2:#4e9f0d; /* logo uchun */
+    --gr-p:#dedede; /* header par uchun */
+    --grey:#7a7a7a; /* section par uchun */
+    --white: #ffffff;
+    --black: #060002;/* body uchun */
+    --dark: rgba(0, 0, 0, 0.1); /* icki soyasi logoni */
+    --col-1: calc(100% / 12 * 1);
+    --col-2: calc(100% / 12 * 2);
+    --col-3: calc(100% / 12 * 3);
+    --col-4: calc(100% / 12 * 4);
+    --col-5: calc(100% / 12 * 5);
+    --col-6: calc(100% / 12 * 6);
+    --col-7: calc(100% / 12 * 7);
+    --col-8: calc(100% / 12 * 8);
+    --col-9: calc(100% / 12 * 9);
+    --col-10: calc(100% / 12 * 10);
+    --col-11: calc(100% / 12 * 11);
+    --col-12: calc(100% / 12 * 12);
+
+}
+/* vae css end */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--fn-rl);
+    min-width: 320px;
+    background: var(--black);
+    color: white;
+}
+.container{
+    max-width: 1140px;
+    padding: 0 15px;
+    width: 100%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-start{
+    justify-content: start;
+}
+/* --- align----- */
+.align-items-center{
+    align-items: center;
+}
+.align-items-start{
+    align-items: start;
+}
+/* -----column-------- */
+.flex-direction-column{
+    flex-direction: column;
+}
+.col-4{
+    width: var( --col-4);
+    padding: 0 15px;
+}
+.col-12{
+    width: var(--col-12);
+    padding: 0 15px;
+}
+/* =============HEADER================ */
+header{
+    width:100%;
+    min-height: 770px;
+    background: url('./images/bg_img.jpg') no-repeat center center / cover;
+}
+.logo{
+    color: var(--white);
+    font-weight: var(--fn-bold);
+    text-transform: uppercase;
+    font-size: 24px;
+    background: var(--green_2);
+    padding: 11px 22px;
+    border: 3px solid var(--green_19);
+    border-radius: 5px;
+    box-shadow: inset 0 0 30px var(--dark);
+    line-height: 17px;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul a{
+    font-size: 20px;
+    font-weight: var(--fn-light);
+    color: var(--green);
+    padding: 37px 26px 29px 26px;
+    display: flex;
+    align-items: center;
+}
+/* ==========hover========== */
+header nav ul a:hover{
+    background: var(--green_75);
+    padding: 37px 26px 29px 26px;
+    color: white;
+}
+header nav ul a.active{
+padding: 37px 11px 29px 11px;
+background: var(--green_75);
+color: var(--white);
+
+}
+header nav ul a.active span{
+    width: 24px;
+    height: 24px;
+    background: var(--white);
+    color: var(--green);
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    margin-left: 7px;
+}
+
+
+
+header h1{
+    font-size: 72px;
+    font-weight: var(--fn-black);
+    color: var(--green_90);
+    text-transform: uppercase;
+    margin-top: 150px;
+}
+header p:first-of-type{
+    color: var(--green_90);
+    font-size: 36px;
+    font-weight: var(--fn-regul);
+    margin-bottom: 30px;
+}
+header p:nth-of-type(2){
+    line-height: 25px;
+    color: var(--gr-p);
+    font-size: 18px;
+    font-weight: var(--fn-regul);
+    margin-bottom: 75px;
+}
+header .header_price{
+    padding: 28px 90px;
+    background: var(--green_75);
+    font-weight: var(--fn-thin);
+    font-size: 60px;
+    color: var(white);
+}
+/* ======main====== */
+main ul{
+    margin: 50px 0 69px 0 !important;
+
+}
+main ul li{
+    margin-right: 50px;
+}
+main ul li a{
+    font-size: 20px;
+    color: var(--grey);
+    font-weight: var(--fn-bold);
+    transition: 500ms;
+}
+main ul li a.active,
+main ul li a:hover {
+    color: var(--green);
+}
+main .section_img{
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+main .section_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main .section_img .price{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+main .section_img .price span{
+    font-size: 24px;
+    font-weight: var(--fn-regul);
+    color: var(--white);
+    display: block;
+    padding: 21px 58px;
+    background: var(--green_75);
+
+}
+main .section_img button{
+    width: 100%;
+    height: 100%;
+    background: var(--green_90);
+    font-size: 24px;
+    font-weight: var(--fn-bold);
+    color: var(--white);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    opacity: 0;
+}
+main .section_img:hover button{
+    opacity: 1;
+    cursor: pointer;
+}
+main .section_img:hover .price{
+    opacity: 0;
+}
+main section h2{
+    font-size: 24px;
+    font-weight: var(--fn-bold);
+    color: var(--green);
+    margin-bottom: 19px;
+    margin-top: 31px;
+}
+main section p{
+    font-size: 16px;
+    font-weight: var(--fn-regul);
+    line-height: 25px;
+    color:var(--gr-p);
+    margin-bottom: 100px;
+}
+/* =========section========= */
+.section{
+    background: url('./images/section_bg.jpg') no-repeat center center / cover;
+}
+.section h2{
+    font-size: 36px;
+    font-weight: var(--fn-bold);
+    color: var(--green);
+    margin-top: 50px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section h2::after{
+    content: "";
+    height: 1px;
+    max-width: 50%;
+    width: 100%;
+    display: block;
+    background: var(--green);
+    margin-top: 20px;
+}
+.section p{
+    color: var(--white);
+    font-weight: vr(--fn-regul);
+    font-size: 18px;
+    line-height: 25px;
+
+}
+.section p:last-of-type{
+    margin-top: 31px;
+    margin-bottom: 102px;
+}
+/* ============= */
+.map h2{
+    color: var(--green);
+    padding: 48px 0 57px;
+    background: var(--white);
+    text-align: center;
+    font-size: 36px;
+    font-weight: var(--fn-bold);
+    text-transform: uppercase;
+}
+/* ---------footer */
+footer .footer_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+footer .footer_info .phone{
+    color: var(--green_2);
+    font-size: 24px;
+    font-weight: var(--fn-bold);
+    font-family: var(--fn-ro);
+}
+
+footer .footer_nav{
+    margin-top: 50px;
+
+}
+footer .footer_nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer .footer_nav ul li{
+    margin-right: 50px;
+}
+footer .footer_nav ul li a{
+    color: var(--white);
+    font-weight: var(--fn-thin);
+    font-size: 18px;
+}
+footer p{
+    color: var(--white);
+    font-weight: var(--fn-thin);
+    font-size: 16px;
+    margin: 48px 0;
+}
+/* ======footer end */
+/* media screen */
+@media (max-width: 992px ){/* LG */
+    
+    .row{
+        margin: 0;
+    }
+
+}
+@media (max-width: 768px ){/* MD */
+    header h1{
+    font-size: 36px;
+    font-weight: var(--fn-black);
+    color: var(--green_90);
+    text-transform: uppercase;
+    margin-top: 150px;
+    }
+    .d-md-none{
+        display: none;
+    }
+    header .logo{
+        margin-top: 20px;
+    }
+    .col-md-12{
+        width: var(--col-12);
+    }
+    footer ul li{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 567px ){/* SM */
+    main ul li,
+    footer ul li{
+        margin-top: 20px;
+
+    }
+        header h1{
+        font-size: 36px;
+        font-weight: var(--fn-black);
+        color: var(--green_90);
+        text-transform: uppercase;
+        margin-top: 150px;
+        }
+        header .header_price{
+            padding: 14px 45px;
+            background: var(--green_75);
+            font-weight: var(--fn-thin);
+            font-size: 30px;
+            color: var(white);
+        }
+}

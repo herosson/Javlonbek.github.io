@@ -1,0 +1,1013 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+} 
+/* Index. html */
+/* header start */
+
+header .header_nav{
+    width: 100%;
+    height: 670px;
+    background: url("../img/header-bg.jpg") center center / cover;
+}
+header .header_nav .navbar .logo{
+    margin: 17px;
+}
+header .header_nav .navbar-nav .nav-item .nav-link{
+    font-size: 12px;
+    font-weight: 500;
+    color:#191919;
+    font-family: 'Montserrat', sans-serif;
+}
+header .header_nav .navbar-nav .nav-item .nav-link:hover{
+    color:#007d2f;
+    font-family: 'Montserrat', sans-serif;
+}
+header .header_nav .header_paragraph h2{
+    font-size: 29.84px;
+    font-weight: 500;
+    color: #1d1d1d;
+    margin-top: 76px;
+    font-family: 'Montserrat', sans-serif;
+}
+header .header_nav .header_paragraph p{
+    font-size: 15.36px;
+    font-weight: 100;
+    color: #787878;
+    line-height: 24px;
+    margin-top: 30px;
+    margin-bottom: 52px ;
+}
+header .header_nav .header_paragraph button{
+    color: white;
+    padding: 22px 56px 24px 46px;
+    background: #007d2f;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+header .header_nav .header_paragraph button:hover{
+    color: white;
+    padding: 22px 56px 24px 46px;
+    background: #007d2f;
+    font-size: 12px;
+    font-weight: 500;
+    border: none; 
+    box-shadow: 2px 2px 5px #007d2f;
+    font-family: 'Montserrat', sans-serif;
+}
+/* header end */
+
+/* main start */
+main .main_first h2{
+    font-size: 34.43px;
+    font-weight: 500;
+    color: #191919;
+    margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+main .main_first p{
+    font-size: 13.82px;
+    color: #787878;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 46px;
+    margin-bottom: 52px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+main .main_second{
+    width: 100%;
+    height: 100%;
+}
+main .main_second h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #171717;
+    font-family: 'Montserrat', sans-serif;
+}
+main .main_second .skills p{
+    font-size: 12px;
+    font-weight: 500;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+main .main_second .skills .progress{
+    width: 270px;
+    height: 3px;
+}
+main .main_second .skills .progress .progress-bar{
+    background: #007d2f;
+}
+main .main_middle{
+    width: 100%;
+    height: auto;
+    background: #f8f9f9;
+    margin-top: 42px;
+    padding-bottom: 50px;
+}
+main .main_third img{
+ width: 100%;   
+ height: 100%;
+}
+/* main end */
+
+/* section start */
+section .section_top{
+    background: #007d2f;
+    width: 100%;
+    height: auto;
+}
+section .section_top .section_icons{
+    margin-top: 75px;
+}
+section .section_top .section_icons i{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    transition: 0.900ms;
+    opacity: 0.1;
+}
+section .section_top .section_icons i:hover{
+    color: yellow;
+    cursor: pointer;
+    opacity: 1;
+   
+}
+
+section .section_top .section_icons p span{
+     font-size: 18px;
+     font-weight: 500;
+     color: white;
+     text-align: center;
+     font-family: 'Montserrat', sans-serif;
+}
+section .section_top .section_icons p{
+    color:white;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+section .section_middle{
+    width: 100%;
+    height: 100%;
+}
+section .section_middle .box_img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+section .section_middle .box_img img{
+    width: 100%;
+    height: 100%;
+    
+}
+section .section_middle .box_img  .box_icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(131, 131, 131, 0.71);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 500ms;
+}section .section_middle .box_img:hover .box_icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(131, 131, 131, 0.45);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+section .section_bottom{
+    width: 100%;
+    height: 100px;
+    background: #007d2f;
+}
+section .section_bottom .section_bottom1 p{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+}
+.section_process h2{
+    font-size: 43px;
+    color:#191919;
+    font-weight: 500;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 25px;
+}
+.section_process p{
+    font-size: 22px;
+    color:#787878;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 47px;
+}
+section .video{
+    margin-bottom: 100px;
+}
+
+section .bottom_icon{
+    background: #f5f5f5;
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+section .bottom_icon .inside_icon{
+    margin-top: 45px;
+}
+section .bottom_icon .inside_icon i{
+    color: #656565;
+    font-size: 43px;
+}
+section .bottom_icon .inside_icon h3{
+    font-size: 13px;
+    color: #191919;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+section .bottom_icon .inside_icon p{
+    font-size: 15px;
+    color:#787878;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 24px;
+}
+section .section_carusel{
+    width: 100%;
+    height: 500px;
+    background: #007d2f;
+}
+section .section_carusel .carusel{
+    margin-top: 200px;
+}
+section .section_carusel .carusel .carousel-item p{
+    color:white;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 45px;
+}
+section .section_carusel .carusel .carousel-item h4{
+    margin-bottom: 100px;
+    font-size: 16px;
+    color:#ffffff;
+    text-align: center;
+}
+section .section_carusel .carusel .carousel-indicators li{
+    width: 10px;
+    height: 2px;
+    border-radius: 50%;
+    background: #b0e8e6;
+}
+section .section_carusel .carusel .carousel-indicators li.active{
+    background: white;
+    width: 12px;
+    height: 3px;
+}
+section .section_brand{
+    width: 100%;
+    height: auto;
+    padding: 0 100px 0 100px;
+}
+section .section_brand img{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+section .section_last{
+    width: 100%;
+    height: auto;
+    background-color: #f5f5f5;
+}
+section .section_last h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #1d1d1d;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 24px;
+    text-align: center;
+}
+section .section_last p{
+    font-size: 16px;
+    color:#787878;
+    font-weight: 500;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    margin-top: 36px;
+    line-height: 24px;
+}
+section .section_last p span{
+    font-size: 16px;
+    color:#787878;
+    font-weight: 500;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    margin-top: 42px;
+    line-height: 24px;  
+}
+section .section_text form textarea{
+    width: 650px;
+    border: 1px solid #d8d8d8 ;
+    border-radius: 5px;
+    height: 200px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+section .section_text button{
+    padding: 24px 26px  22px 26px;
+    background: #007d2f;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    color: white;
+    margin-top: 30px;
+    justify-content: center;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-left: 320px;
+}
+/* section end */
+
+/* footer start */
+footer{
+    background: #141414;
+}
+
+footer .container .col-lg-3 a{
+    color:white;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 98px;
+    margin-bottom: 34px;
+    text-decoration: none;
+}
+footer .container .col-lg-3 p{
+    color: #bcbcbc;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 102px;
+}
+footer .container .col-lg-2 a{
+    margin-top: 98px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    color: #bcbcbc;
+    font-size: 15px;
+    text-decoration: none;
+}   
+footer .row .col-lg-4 .col-auto a{
+    color: #bcbcbc;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    
+}
+footer .row .col-lg-4 .col-auto{
+    margin-top: 98px;
+    line-height: 24px;
+}
+/* footer end */
+
+/* Media XL  1200px----- */
+
+
+@media(max-width:1400px){
+    section .section_text button{
+        margin-bottom: 40px;
+        margin-left: 260px;
+    }
+    footer .container .col-lg-2 a{
+        margin-top: -58px;
+    }
+}
+
+/* Meda LG  992px------1199px */
+
+@media(max-width:1199px){
+    section .section_text button{
+        margin-bottom: 40px;
+        margin-left: 260px;
+    }
+    footer .container .col-lg-2 a{
+        margin-top: -58px;
+    }
+}
+
+
+/* Media MD-768px -----991px */
+
+@media(max-width:991px){
+    footer .row .col-lg-4 .col-auto{
+        margin-top: -12px;
+    }
+    footer .row .col-lg-4 .col-auto{
+        margin-left: 40px;
+    }
+    section .section_text button{
+        margin-bottom: 40px;
+    }
+    footer .container .col-lg-2 a{
+        margin-top: -86px;
+    }
+    footer .row .col-lg-4 .col-auto{
+        margin-bottom: 50px;
+    }
+    section .section_text form textarea{
+        width: 692px;
+    }
+}
+
+
+/* Media sm 576px-----767px */
+
+@media(max-width:767px){
+    section .section_text form textarea{
+        width: 514px;
+    }
+    main .main_second h2{
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    main .main_second .skills p{
+        font-size: 9px;
+        margin-top: 10px;
+  }
+    main .main_second .skills .progress{
+        width: 180px;
+    }
+    .section_process h2{
+        font-size: 32px;
+    }
+    .section_process p{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    section .section_carusel .carusel .carousel-item p{
+        font-size: 16px;
+    }
+    section .section_brand{
+        padding: 0 200px 0 210px;
+    }
+    section .section_last h2{
+        font-size: 24px;
+    }
+    section .section_last p{
+        font-size: 14px;
+    }
+    section .section_last p span{
+        font-size: 14px;
+    }
+    section .section_text button{
+        margin-left: 260px;
+        margin-bottom: 40px;
+    }
+    footer .container .col-lg-3 a{
+        margin-left: 42px;
+    }
+    footer .container .col-lg-3 p{
+        margin-bottom: 0px;
+        margin-left: 33px;
+    }
+    footer .container .col-lg-2 a{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 62px;
+    }
+    footer .row .col-lg-4 .col-auto{
+        margin-left: 85px;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:575px){
+    section .section_brand{
+        padding: 0 111px 0 81px;
+    }
+    section .section_text form textarea{
+        width: 284px;
+    }
+    section .section_text button{
+        margin-left: 60px;
+    }
+    section .bottom_icon .inside_icon i{
+        text-align: center;
+    }
+    section .bottom_icon .inside_icon h3{
+        text-align: center;
+    }
+    main .main_second h2{
+        text-align: center;
+    }
+    main .main_second .skills .progress{
+        margin-left: 30px;
+    }
+    main .main_second .skills p{
+        margin-left: 30px;
+    }
+}
+
+/* index.html */
+
+
+
+
+
+/* ---------- Home start-------- */
+
+
+/* *****  Header start ***** */
+header .home_nav{
+    width: 100%;
+    height: auto;
+    margin-bottom: 18px;
+}
+header .home_nav .logo{
+    margin-top: 17px;
+}
+header .home_nav .logo .navbar-nav{
+    margin-top: 45px;
+}
+header .home_nav .navbar-nav .home-item {
+    list-style: none;
+
+}
+header .home_nav .navbar .navbar-nav .home-item a{
+    color: #191919;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+header .home_nav .navbar .navbar-nav .home-item .active{
+    color: #007d2f;
+    text-transform: uppercase;
+}
+header .home_nav .navbar .navbar-nav .home-item a:hover{
+    color: #007d2f;
+}
+
+/* ****  header End  **** */
+
+
+/*  *****  Main start  ***** */
+
+main .designer{
+    width: 100%;
+    height: auto;
+    background: #007d2f;
+}
+main .designer .about_designer h2{
+    font-size: 30px;
+    color:#171717;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 112px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+main .designer .about_designer p{
+    font-size: 17px;
+    color:#fefefe;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 98px;
+}
+
+section .home_section{
+    width: 100%;
+    height: 100%;
+}
+section .home_section .home_img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+section .home_section .home_img .home_icon{
+    background: rgba(55, 137, 86, 0.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 500ms;
+}
+section .home_section .home_img:hover .home_icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(55, 137, 86, 0.85);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    color: white;
+    font-size: 30px;
+}
+
+/* *****  section end  *****  */
+
+
+/* --------- Media About----------- */
+
+
+/* Media MD 768px----991px */
+
+@media(max-width:991px){
+    main .designer .about_designer h2{
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+    main .designer .about_designer p{
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+/* -------------- About HTML Start ------------------ */
+
+/*  ***** Main Start ****** */
+
+main .main_woods{
+    width: 100%;
+    height: auto;
+    background: #323232;
+}
+main .main_woods .about_wood h2{
+    font-size: 61px;
+    font-weight: 400;
+    color:#ffffff;
+    margin-top: 118px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+main .main_woods .about_wood p{
+    font-size: 22px;
+    font-weight: 400;
+    color:#ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 115px;
+}
+
+/*  *** Main End *** */
+
+/* *** Section Start */
+section .about_img{
+    width: 100%;
+    height: auto;
+    background: #f5f5f5;
+    margin-bottom: 100px;
+}
+section .about_img .jaga_img{
+    width: 100%;
+    height: 100%;
+}
+section .about_img .jaga_img img{
+    width: 100%;
+    height: 100%;
+}
+section .about_img .about_text h2{
+    font-size: 30px;
+    color: #171717;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+section .about_img .about_text p{
+    font-size: 16px;
+    color: #787878;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+}
+section .about_img .about_text span{
+    font-size: 16px;
+    color: #787878;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 36px;
+
+}
+section .project{
+    width: 100%;
+    height: auto;
+}
+section .project .kerak_p h2{
+    font-size: 36px;
+    font-weight: 400;
+    color: #1d1d1d;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 38px;
+}
+section .project .kerak_p p{
+    font-size: 16px;
+    color: #787878;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 38px;
+}
+section .project button{
+    padding: 22px 43px 22px 43px;
+    background: #007d2f;
+    border: none;
+    text-transform: uppercase;
+    color:white;
+    margin-bottom: 100px;
+}
+/*  *** Section End *** */
+
+
+/* --- Media About */
+
+/* Md- 768px----991px */
+
+@media(max-width:991px){
+    main .main_woods .about_wood h2{
+        font-size: 44px;
+    }
+    main .main_woods .about_wood p{
+        font-size: 15px;
+    }
+    section .project .kerak_p h2{
+        font-size: 30px;
+        margin-bottom: 22px;
+    }
+    section .project .kerak_p p{
+        font-size: 14px;
+    }
+}
+
+/* Sm- 576px-----767px */
+
+@media(max-width:767px){
+    section .about_img .about_text p{
+        font-size: 14px;
+        text-align: center;
+    }
+    section .about_img .about_text span{
+        font-size: 14px;
+        text-align: center; 
+    }
+}
+
+
+/* *** About HTML END */
+
+
+/* Project Single HTML Start */
+
+/* ------ Main Start ----  */
+
+main .carousel{
+    width: 100%;
+    height: auto;
+    background: #f6f6f6;
+}
+main .carousel .carousel_img{
+    width: 100%;
+    height: 100%;
+}
+main .carousel .carousel_img img{
+    height: 100%;
+    width: 100%;
+}
+main .carousel .carousel-inner .carousel-item .carousel_text{
+    width: 430px;
+    height: auto;
+}
+main .carousel .carousel-inner .carousel-item .carousel_text h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    color: #171717;
+    font-weight: 400;
+    margin-bottom: 40px;
+
+}
+main .carousel .carousel-inner .carousel-item .carousel_text h4{
+    font-size: 16px;
+    color: #787878;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 36px;
+}
+main .carousel .carousel-inner .carousel-item .carousel_text h5{
+    font-size: 16px;
+    color: #787878;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 60px;
+}
+main .carousel .carousel-inner .carousel-item .carousel_text p{
+    font-size: 16px;
+    color: #171717;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+}
+main .carousel .carousel-inner .carousel-item .carousel_text span{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #787878;
+}
+main .carousel .carousel_strelka{
+    width: 100%;
+    height: 100px;
+    background: #007d2f;
+    
+}
+main .carousel .carousel_strelka i{
+    color: white;
+    font-size: 16px;
+}
+main .carousel .carousel_strelka .carousel_bottom{
+    margin-top: 40px;
+}
+main .carousel .carousel_strelka .carousel_bottom p{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+main .carousel .carousel-control-prev a{
+    position: absolute;
+    left:60px;
+
+}
+/* *------ Main End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Project single HTML End */
+
+
+/* ------- Contact HTML Start */
+section .contact{
+    width: 100%;
+    height: auto;
+    background: #f5f5f5;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+section .contact .contact_text textarea{
+    width: 635px;
+    border: 1px solid #dedcdc;
+    background: white;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+section .contact .contact_text button{
+    padding: 24px 26px 22px 24px;
+    font-size: 12px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background: #007d2f;
+    border: none;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+section .contact .info h2{
+    font-size: 30px;
+    color:#171717;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+section .contact .info h4{
+    font-size: 16px;
+    font-weight: 400;
+    color:#787878;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 38px;
+    margin-top: 42PX;
+    line-height: 24px;
+}
+section .contact .info p{
+    font-size: 16px;
+    font-weight: 700;
+    color:#171717;
+    font-family: 'Nunito Sans', sans-serif;
+}
+section .contact .info span{
+    font-size: 16px;
+    font-weight: 400;
+    color:#787878;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* -------- Conatct HTML end */
+
+
+
+/* ****  Media Contact HTML */
+
+/* MD--- 768px--991px */
+
+@media(max-width:991px){
+    section .contact .contact_text textarea{
+        width: 694px;
+    }
+    section .contact .contact_text button{
+        margin-left: 246px;
+    }
+}
+
+/* SM  576px-----767px*/
+
+@media(max-width:576px){
+    section .contact .contact_text textarea{
+        width: 510px;
+    }
+    section .contact .contact_text button{
+        margin-left: 200px;  
+    }
+}
